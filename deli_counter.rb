@@ -21,10 +21,7 @@ def now_serving(queue)
   if(queue.length==0)
     puts "There is nobody waiting to be served!"
   else
-    current_line = "The line is currently:"
-      queue.each.with_index(1) { |person,index|
-        current_line << " #{index}. #{person}"
-      }
-    puts current_line
+    puts "Currently serving #{queue[0]}."
+    queue.shift
   end
 end
