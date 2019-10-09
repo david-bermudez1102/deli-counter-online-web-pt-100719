@@ -24,4 +24,5 @@ def now_serving(queue)
     puts "Currently serving #{queue[0]}."
     queue.shift
   end
+  queue
 end
