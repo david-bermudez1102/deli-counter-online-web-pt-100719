@@ -9,3 +9,9 @@ def line(queue)
     puts current_line
   end
 end
+
+def take_a_number(line,new_person)
+  line << new_person
+  number_in_line = line.length
+  puts "Welcome, #{new_person}. You are number #{number_in_line} in line."
+end
